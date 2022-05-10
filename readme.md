@@ -5,9 +5,7 @@
 ```
 
 :rice: Requirement :
-- react
-- icon chevron down & up (if needed)
-
+- plain React JS only
 
 :eyes: Usage :
 - Put this file to your component directory folder. You can choose to make a new folder or not.
