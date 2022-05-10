@@ -7,6 +7,7 @@ import './styles.css'
  * @property { boolean } checked - Checkbox's checkmark
  * @property { React.ChangeEventHandler<HTMLInputElement> } onChange - Checkbox's onChange event
  * @property { string } classNameDiv - Add your own css class style into main checkbox element
+ * @property { string } name - Add name for input
  */
 
 /**
@@ -16,12 +17,13 @@ import './styles.css'
  * @property { PropTypes } checked
  * @property { PropTypes } onChange
  * @property { PropTypes } classNameDiv
+ * @property { PropTypes } name
  */
 
-export default function Checkbox({ children, checked = false, onChange, classNameDiv }) {
+export default function Checkbox({ children, checked = false, onChange, classNameDiv, name, ...rest }) {
      return (
           <label className={`container ${classNameDiv}`}>{children}
-               <input type="checkbox" checked={checked} onChange={onChange} />
+               <input type="checkbox" name={name} checked={checked} onChange={onChange} onClick={onClick} {...rest} />
                <span className="checkmark"></span>
           </label>
      )
