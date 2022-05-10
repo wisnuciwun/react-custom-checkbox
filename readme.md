@@ -25,11 +25,11 @@
 :paperclip: Example :
 ```js
  <div>
-     <Checkboxes onClick={this.onCheckList} name='checkedOne' checked={this.state.checkedOne}>
+     <Checkbox onClick={this.onCheckList} name='checkedOne' checked={this.state.checkedOne}>
           <span>One</span>
-     </Checkboxes>
-     <Checkboxes onClick={this.onCheckList} name='checkedTwo' checked={this.state.checkedTwo}>
+     </Checkbox>
+     <Checkbox onClick={this.onCheckList} name='checkedTwo' checked={this.state.checkedTwo}>
           <span>Two</span>
-     </Checkboxes>
+     </Checkbox>
 </div>
 ```
